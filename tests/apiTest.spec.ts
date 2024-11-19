@@ -22,10 +22,9 @@ test("API POST", async ({ request }) => {
 
     console.log(response1.status())
     expect(response1.status()).toBe(201)
-
 })
 
-let userID = 750;
+let userID = 640;
 
 test("API PUT", async ({ request }) => {
 
