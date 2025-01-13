@@ -20,7 +20,7 @@ test("locators", async ({ page }) => {
 
     // await page.getByAltText('naveenopencart').click();
 
-    await expect.soft(page.getByRole('heading', { name: 'Register Accrount' })).toBeVisible();
+    await expect.soft(page.getByRole('heading', { name: 'Register Account' })).toBeVisible();
 
     await page.locator('#content p a').click();
 
