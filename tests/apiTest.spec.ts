@@ -22,7 +22,7 @@ test("API POST", async ({ request }) => {
     console.log(await response1.json());
 
     console.log(response1.status())
-    expect(response1.status()).toBe(203)
+    expect(response1.status()).toBe(201)
 })
 
 let userID = 640;
@@ -42,7 +42,7 @@ test("API PUT", async ({ request }) => {
     console.log(await response1.json());
 
     console.log(response1.status())
-    expect(response1.status()).toBe(400)
+    expect(response1.status()).toBe(200)
 
 })
 
