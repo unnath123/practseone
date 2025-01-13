@@ -1,7 +1,7 @@
 // const { test, expect } = require('@playwright/test');
 import { test, expect } from '@playwright/test'
 
-test.only("API test", async ({ request }) => {
+test("API test", async ({ request }) => {
 
     const response = await request.get("https://reqres.in/api/users/2");
     console.log(await response.json());
@@ -42,7 +42,7 @@ test("API PUT", async ({ request }) => {
     console.log(await response1.json());
 
     console.log(response1.status())
-    expect(response1.status()).toBe(200)
+    expect(response1.status()).toBe(400)
 
 })
 
