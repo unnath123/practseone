@@ -25,6 +25,8 @@ test("locators", async ({ page }) => {
     await page.locator('#content p a').click();
 
     await page.waitForTimeout(2000);
+    console.log("test-1")
+    console.log("test-2")
 })
 
 // npx playwright test --project=chromium --headed
